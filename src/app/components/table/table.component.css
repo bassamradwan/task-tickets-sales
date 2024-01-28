@@ -1,0 +1,55 @@
+/* src/app/table-example/table-example.component.css */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    direction: rtl; /* توجيه النص إلى اليمين */
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: right; /* محاذاة النص إلى اليمين */
+  }
+  
+ /* إضافة أنماط CSS لتحسين تنسيق الصورة ورقم الهاتف */
+.user-info-cell {
+  text-align: center;
+}
+
+.user-info-container {
+  display: flex;
+  align-items: center;
+}
+
+.user-image {
+  max-width: 100px;
+  max-height: 100px;
+  margin-right: 10px;
+  border-radius: 50%; /* تقوم بتطبيق تقريب للصورة (اختياري) */
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.phone-number {
+  font-size: 11px;
+  color: #555; /* لون النص لرقم الهاتف */
+}
+
+@media screen and (max-width: 500px) {
+  .table-responsive {
+    width: 100%;
+  }
+
+  .table th,
+  .table td {
+    padding: 5px;
+  }
+}

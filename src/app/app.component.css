@@ -1,0 +1,28 @@
+
+.myCard{
+    background-image:url(.././assets/Subtract.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+  }
+  .myp{
+    font: 1.5em ;
+    font-weight: 400;
+    font-family: 'Cairo', sans-serif;
+  }
+  body {
+    font-family: 'Neo Sans Arabic', sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+
+  .myCard {
+    width: 100%;
+  }
+
+  .myp {
+    font-size: 16px;
+  }
+}

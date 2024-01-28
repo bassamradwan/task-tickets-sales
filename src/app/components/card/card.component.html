@@ -1,0 +1,119 @@
+<!-- <div class="contener myCard" dir="rtl">
+
+  <div class="container text-light">
+    <div class="row m-2">
+      <div class="col-md-11 d-flex align-items-center justify-content-center">
+        <p>عرض التذاكر الخاصة بالفيلم</p>
+      </div>
+      <div class="col-md-1 d-flex justify-content-end">
+        <img src="../../../assets/trash.svg" alt="" />
+      </div>
+    </div>
+
+    <div class="d-flex flex-column align-items-center">
+      <div
+        class="d-flex align-content-center justify-content-center rounded bg-light text-dark w-75 "
+      >
+        <p class="ms-3 m-1">{{ ticketNumber }}</p>
+        <a (click)="copyToClipboard()">
+          <img src="../../../assets/Vector.svg" alt="copy" />
+        </a>
+      </div>
+      <p>فعال حتى  15 يوليو 2023</p>
+    </div>
+  </div>
+  <img src="../../../assets/Vector 2.svg" />
+
+  <div class="d-flex myQR">
+    <div class="d-flex align-items-center m-1" >
+      <div class="m-3">
+        <p class="myp">خصم 25%</p>
+      </div>
+      <a href="#" class="custom-button m-4">
+        <img src="../../../assets/send-2.svg" alt="Icon" />
+        مشاركه
+      </a>
+    </div>
+
+    <div>
+      <div class="qrcodeImage m-1">
+        <qrcode
+          [qrdata]="'https://www.linkedin.com/in/bassam-mohamed-11a08b249/'"
+          [allowEmptyString]="true"
+          [ariaLabel]="'QR Code image with the following content...'"
+          [cssClass]="'center'"
+          [colorDark]="'#000000ff'"
+          [colorLight]="'#ffffffff'"
+          [elementType]="'canvas'"
+          [errorCorrectionLevel]="'M'"
+          [imageSrc]="'./assets/angular-logo.png'"
+          [imageHeight]="25"
+          [imageWidth]="25"
+          [margin]="2"
+          [scale]="1"
+          [title]="'My profile '"
+          [width]="75"
+        ></qrcode>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="container myCard" dir="rtl">
+  <!-- الجزء العلوى -->
+  <div class="container text-light">
+    <div class="row m-2">
+      <div class="col-md-11 d-flex align-items-center justify-content-center">
+        <p>عرض التذاكر الخاصة بالفيلم</p>
+      </div>
+      <div class="col-md-1 d-flex justify-content-end">
+        <img src="../../../assets/trash.svg" alt="حذف" />
+      </div>
+    </div>
+
+    <div class="d-flex flex-column align-items-center">
+      <div class="d-flex align-content-center justify-content-center rounded bg-light text-dark w-75">
+        <p class="ms-3 m-1">{{ ticketNumber }}</p>
+        <a (click)="copyToClipboard()">
+          <img src="../../../assets/Vector.svg" alt="نسخ" />
+        </a>
+      </div>
+      <p>فعال حتى 15 يوليو 2023</p>
+    </div>
+  </div>
+  <img src="../../../assets/Vector 2.svg" alt="رمز فيلم" class="img-fluid" />
+  <!-- الجزء السفلي -->
+  <div class="d-flex myQR">
+    <div class="d-flex align-items-center m-1">
+      <div class="m-3">
+        <p class="myp">خصم 25%</p>
+      </div>
+      <a href="#" class="custom-button m-4">
+        <img src="../../../assets/send-2.svg" alt="أيقونة إرسال" />
+        مشاركة
+      </a>
+    </div>
+
+    <div>
+      <div class="qrcodeImage m-1">
+        <qrcode
+          [qrdata]="'https://www.linkedin.com/in/bassam-mohamed-11a08b249/'"
+          [allowEmptyString]="true"
+          [ariaLabel]="'QR Code image with the following content...'"
+          [cssClass]="'center img-fluid'"
+          [colorDark]="'#000000ff'"
+          [colorLight]="'#ffffffff'"
+          [elementType]="'canvas'"
+          [errorCorrectionLevel]="'M'"
+          [imageSrc]="'./assets/angular-logo.png'"
+          [imageHeight]="25"
+          [imageWidth]="25"
+          [margin]="2"
+          [scale]="1"
+          [title]="'My profile '"
+          [width]="75"
+        ></qrcode>
+      </div>
+    </div>
+  </div>
+</div>

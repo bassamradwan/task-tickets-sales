@@ -1,0 +1,35 @@
+<div dir="rtl">
+  <div class="d-flex justify-content-between mt-4">
+    <div>
+      <p class="myp">إحصائيات إستخدام القسيمة</p>
+      <p class="p-date">05 يوليو , 2023 - 05 أغسطس , 2023</p>
+    </div>
+<a href="#" class="custom-button m-2">
+  سنويا
+  <img src="../../../assets/arrow-right.svg" alt="Icon">
+  
+</a>
+
+  </div>
+  <apx-chart
+    [series]="chartOptions.series"
+    [chart]="chartOptions.chart"
+    [xaxis]="chartOptions.xaxis"
+    [dataLabels]="chartOptions.dataLabels"
+    [yaxis]="chartOptions.yaxis"
+    [labels]="chartOptions.labels"
+  ></apx-chart>
+</div>
+
+<!-- <apx-chart
+  [series]="chartOptions.series"
+  [chart]="chartOptions.chart"
+  [xaxis]="chartOptions.xaxis"
+  [stroke]="chartOptions.stroke"
+  [dataLabels]="chartOptions.dataLabels"
+  [yaxis]="chartOptions.yaxis"
+  [labels]="chartOptions.labels"
+  [legend]="chartOptions.legend"
+  [title]="chartOptions.title"
+  [subtitle]="chartOptions.subtitle"
+></apx-chart> -->

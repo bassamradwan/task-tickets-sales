@@ -1,0 +1,72 @@
+<!-- 
+<p-table [value]="tickets" dir="rtl">
+    <ng-template pTemplate="header">
+      <tr>
+        <th>المستخدم</th>       
+        <th>رقم التذاكرة</th>
+        <th>قيمتى التذاكرة</th>
+        <th>السينمات</th>
+        <th>عدد الاشخاص</th>
+        <th>عدد مرات الشراء</th>
+        <th>التذاكرة</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-ticket >
+      <tr>
+        <td>{{ ticket.userName }}</td>
+        <td>{{ ticket.ticketNumber }}</td>
+        <td>{{ ticket.totalPrice | currency:'USD':'symbol':'1.2-2' }}</td>
+        <td>{{ ticket.ticketValue | currency:'USD':'symbol':'1.2-2' }}</td>
+        <td>{{ ticket.cinema }}</td>
+        <td>{{ ticket.attendees.join(', ') }}</td>
+        <td>{{ ticket.purchaseCount }}</td>
+      </tr>
+    </ng-template>
+  </p-table> -->
+  
+<!-- src/app/table-example/table-example.component.html -->
+
+<!-- src/app/table-example/table-example.component.html -->
+
+<p-table [value]="tickets" [sortField]="sortField" [sortOrder]="sortOrder" dir="rtl">
+  <ng-template pTemplate="header"  >
+    <tr>
+      <th pSortableColumn="id"># </th>
+      <th pSortableColumn="userName">المستخدم </th>
+      <th pSortableColumn="ticketNumber">رقم التذاكرة</th>
+      <th pSortableColumn="ticketValue">قيمة التذاكرة <p-sortIcon field="ticketValue"></p-sortIcon></th>
+      <th pSortableColumn="cinema">السينمات</th>
+      <th pSortableColumn="attendees">عدد الاشخاص</th>
+      <th pSortableColumn="purchaseCount"> عدد مرات الشراء</th>
+      <th pSortableColumn="ticketInfo"> التذاكرة </th>
+
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-ticket>
+    <tr>
+      <td>{{ ticket.id }}</td>
+      <td class="user-info-cell">
+        <div class="user-info-container">
+          <img src="{{ ticket.userImage }}" alt="User Image" class="user-image">
+          <div class="user-details m-2">
+            <span class="user-name">{{ ticket.userName }}</span>
+            <span class="phone-number">{{ ticket.phonNamber }}</span>
+          </div>
+        </div>
+      </td>
+      <td>{{ ticket.ticketNumber }}</td>
+      <td>{{ ticket.ticketValue }}</td>
+      <td>{{ ticket.cinema }}</td>
+      <td>{{ ticket.attendees }}</td>
+      <td>{{ ticket.purchaseCount }}</td>
+      <td>{{ ticket.ticketInfo }}</td>
+    </tr>
+  </ng-template>
+  
+</p-table>
+<p-paginator #paginator [rows]="rows" [totalRecords]="totalRecords" [rowsPerPageOptions]="[5, 10, 20]" [first]="first" [title]="title" ></p-paginator>
+
+
+
+  
+  

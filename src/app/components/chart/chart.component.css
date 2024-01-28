@@ -1,0 +1,50 @@
+
+.apexcharts-menu {
+    display: none !important;
+  }
+  .myp{
+    font-family: Neo Sans Arabic;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .p-date{
+    font-family: Neo Sans Arabic;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .mydrob{
+    background-color: #E8E8E8;
+  }
+
+  /* في ملف styles.css أو أي ملف نمط آخر */
+.custom-button {
+    font-family: 'Neo Sans Arabic';
+    font-size: 12px;
+    display: inline-block; /* جعل الزر عنصرا مستقلًا على الشاشة */
+    border: 2px solid #E8E8E8;
+    padding: 2px 15px;
+    color: #373737;
+    cursor: pointer;
+    text-decoration: none; /* إزالة التزيين الافتراضي للروابط */
+    border-radius: 5px;
+    height: 40px; /* تعيين ارتفاع مباشر */
+  line-height: 24px; /* ضبط الارتفاع النصي لتوسيط النص */
+  }
+  
+  .custom-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
+  .apexcharts-container {
+    width: 100%;
+    height: 200px;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .apexcharts-container {
+      width: 100%;
+      height: 150px;
+    }
+  }
+  

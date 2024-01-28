@@ -1,0 +1,41 @@
+
+.qrcodeImage {
+    display: flex;
+    flex: 1;
+  }
+  .center {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+  }
+  .myQR{
+    justify-content: space-between;
+  }
+  .custom-button {
+    font-family: 'cairo',sans-serif;
+    font-size: 12px;
+    display: inline-block; /* جعل الزر عنصرا مستقلًا على الشاشة */
+    border: 2px solid #E8E8E8;
+    padding: 2px 5px;
+    color: #f9f5f5;
+    cursor: pointer;
+    text-decoration: none; /* إزالة التزيين الافتراضي للروابط */
+    border-radius: 5px;
+    height: 30px; /* تعيين ارتفاع مباشر */
+  line-height: 24px; /* ضبط الارتفاع النصي لتوسيط النص */
+  }
+  
+  .custom-button img {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+  }
+  .myp{
+    font: 1em "cairo",sans-serif;
+    font-weight: 400;
+    color: #E8E8E8;
+    width: 25px;
+  }
+  body {
+    font-family: "cairo",sans-serif;
+}
